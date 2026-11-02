@@ -1,0 +1,149 @@
+{
+  "source": "data/*.csv",
+  "generated_by": "src/analysis.py",
+  "files": {
+    "category_concentration.csv": {
+      "rows": 10,
+      "columns": [
+        "category_label",
+        "delivered_gmv_brl",
+        "gmv_share_pct"
+      ]
+    },
+    "geographic_regression_data.csv": {
+      "rows": 95682,
+      "columns": [
+        "order_id",
+        "distance_km",
+        "carrier_to_customer_days",
+        "log_distance"
+      ]
+    },
+    "local_seller_logistics.csv": {
+      "rows": 2,
+      "columns": [
+        "local_class",
+        "orders",
+        "mean_carrier_to_customer_days"
+      ]
+    },
+    "logistics_stages.csv": {
+      "rows": 2,
+      "columns": [
+        "local_class",
+        "orders",
+        "approval_to_carrier_days",
+        "carrier_to_customer_days",
+        "group_label"
+      ]
+    },
+    "monthly_commercial_performance.csv": {
+      "rows": 20,
+      "columns": [
+        "month",
+        "orders",
+        "gmv",
+        "avg_product_ticket",
+        "month_label"
+      ]
+    },
+    "orders_forecast_sep_dec_2018.csv": {
+      "rows": 4,
+      "columns": [
+        "month",
+        "forecast_orders",
+        "lower_80",
+        "upper_80"
+      ]
+    },
+    "payment_installments.csv": {
+      "rows": 5,
+      "columns": [
+        "installment_band",
+        "orders",
+        "median_order_value_brl"
+      ]
+    },
+    "payment_mix.csv": {
+      "rows": 4,
+      "columns": [
+        "payment_type",
+        "payment_value_brl",
+        "share_paid_value_pct"
+      ]
+    },
+    "regional_distribution.csv": {
+      "rows": 5,
+      "columns": [
+        "region",
+        "customers",
+        "customer_share_pct",
+        "active_sellers",
+        "seller_share_pct",
+        "orders",
+        "avg_freight_brl",
+        "avg_delivery_days",
+        "late_rate"
+      ]
+    },
+    "repeat_purchase_by_delivery.csv": {
+      "rows": 2,
+      "columns": [
+        "late",
+        "customers",
+        "repeat_rate",
+        "repeat_customers",
+        "delivery_status"
+      ]
+    },
+    "reviews_by_delivery_band.csv": {
+      "rows": 12,
+      "columns": [
+        "lead_time_band",
+        "late",
+        "n",
+        "avg_review_score",
+        "one_star_rate",
+        "delivery_status"
+      ]
+    },
+    "reviews_by_delivery_status.csv": {
+      "rows": 2,
+      "columns": [
+        "late",
+        "n",
+        "avg_review_score",
+        "one_star_rate"
+      ]
+    },
+    "seller_concentration.csv": {
+      "rows": 2945,
+      "columns": [
+        "seller_id",
+        "delivered_gmv_brl",
+        "seller_rank",
+        "seller_share_pct",
+        "cumulative_gmv_pct",
+        "cumulative_seller_pct"
+      ]
+    },
+    "seller_pareto_curve.csv": {
+      "rows": 8,
+      "columns": [
+        "seller_percent",
+        "gmv_cumulative_pct",
+        "uniform_reference_pct",
+        "seller_count"
+      ]
+    },
+    "semester_comparison.csv": {
+      "rows": 2,
+      "columns": [
+        "semester",
+        "orders",
+        "gmv",
+        "avg_product_ticket"
+      ]
+    }
+  }
+}

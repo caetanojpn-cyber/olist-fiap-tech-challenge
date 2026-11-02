@@ -1,0 +1,130 @@
+{
+  "dataset_scope": {
+    "orders": 99092,
+    "unique_customers": 95774,
+    "period_start": "2017-01-01",
+    "period_end_exclusive": "2018-09-01"
+  },
+  "commercial": {
+    "gmv_all_status_brl": 15786203.57,
+    "product_ticket_mean_brl": 137.68,
+    "semester": [
+      {
+        "semester": "2017_1S",
+        "orders": 14611,
+        "gmv": 2357093.93,
+        "avg_product_ticket": 141.43144342041438
+      },
+      {
+        "semester": "2018_1S",
+        "orders": 41187,
+        "gmv": 6581494.64,
+        "avg_product_ticket": 137.29231528173645
+      }
+    ]
+  },
+  "delivery": {
+    "delivered_orders": 96203,
+    "mean_purchase_to_delivery_days": 12.54,
+    "late_rate": 0.08130723574108915
+  },
+  "reviews_by_delivery_status": [
+    {
+      "late": "on_time",
+      "n": 87902,
+      "avg_score": 4.295374394211736,
+      "one_star_rate": 0.06562990603171714
+    },
+    {
+      "late": "late",
+      "n": 7658,
+      "avg_score": 2.5679028466962652,
+      "one_star_rate": 0.4613476103421259
+    }
+  ],
+  "seller_concentration": {
+    "eligible_sellers": 2945,
+    "top_1pct_gmv_share": 0.2548550770575072,
+    "top_10pct_gmv_share": 0.6621854154583603,
+    "top_10_categories_gmv_share": 0.6323437298790097
+  },
+  "repeat_purchase": {
+    "cohort_customers": 21403,
+    "fisher_exact_p_value": 0.1486031621171771,
+    "by_delivery_status": [
+      {
+        "late": false,
+        "customers": 20510,
+        "repeat_rate": 0.04275962944904924,
+        "repeat_customers": 877,
+        "delivery_status": "on_time"
+      },
+      {
+        "late": true,
+        "customers": 893,
+        "repeat_rate": 0.032474804031354984,
+        "repeat_customers": 29,
+        "delivery_status": "late"
+      }
+    ],
+    "delivery_date_sensitivity_p_value": 0.004710558971534407,
+    "delivery_date_sensitivity": [
+      {
+        "late": false,
+        "customers": 19334,
+        "repeat_rate": 0.046394951898210406,
+        "repeat_customers": 897
+      },
+      {
+        "late": true,
+        "customers": 723,
+        "repeat_rate": 0.024896265560165973,
+        "repeat_customers": 18
+      }
+    ]
+  },
+  "payments": {
+    "credit_card_share_of_paid_value": 0.7835640462008477,
+    "credit_card_orders_installments_gt1_share": 0.6684765502045955,
+    "median_credit_card_installments": 3.0
+  },
+  "logistics_local_seller": [
+    {
+      "local_class": "all_local",
+      "orders": 34489,
+      "mean_carrier_to_customer_days": 4.805251552293108
+    },
+    {
+      "local_class": "none_local",
+      "orders": 61468,
+      "mean_carrier_to_customer_days": 11.902732785629025
+    }
+  ],
+  "geographic_distance_regression": {
+    "n": 95682,
+    "same_state_effect_days": -2.8519713734646235,
+    "ci95_low": -2.9813304406372834,
+    "ci95_high": -2.7226123062919636,
+    "distance_log_coefficient": 2.004114400562802,
+    "p_value": 0.0,
+    "r_squared": 0.1945813782469733,
+    "model": "carrier_to_customer_days ~ same_state + log1p(distance_km)"
+  },
+  "northeast": {
+    "customer_share": 0.09511322011322011,
+    "active_seller_share": 0.01833616298811545
+  },
+  "forecast": {
+    "slope_orders_per_month": -127.107142857143,
+    "backtest_wape": 0.17147418313098486,
+    "method": "linear trend; no seasonality or event adjustment"
+  },
+  "methodological_notes": [
+    "GMV = item price + freight; it is not accounting revenue or profit.",
+    "Product ticket = mean sum of item prices per order; freight excluded.",
+    "On-time means delivered on or before estimated delivery date.",
+    "Seller local classification uses seller/customer state; mixed orders excluded.",
+    "Distance is approximated from ZIP-prefix centroids; regression controls for log distance and same-state indicator; association, not causation.",
+    "Forecast is a linear trend without seasonality or Black Friday adjustment."
+  ]
+}

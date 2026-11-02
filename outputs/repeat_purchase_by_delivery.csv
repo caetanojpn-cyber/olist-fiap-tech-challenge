@@ -1,0 +1,3 @@
+﻿late,customers,repeat_rate,repeat_customers,delivery_status
+False,20510,0.04275962944904924,877,on_time
+True,893,0.032474804031354984,29,late
