@@ -1,27 +1,429 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Olist | Relatório Executivo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<link rel="stylesheet" href="styles.css"></head><body>
-<header class="top"><div class="brand"><span class="mark">O</span><span>OLIST <i>/</i> FIAP TECH CHALLENGE</span></div><div class="topright"><span id="counter">01 / 15</span><button id="full">Tela cheia ↗</button><button onclick="window.print()">Salvar PDF ↓</button></div></header>
-<main id="deck">
+<html lang="pt-BR">
 
-<section class="slide cover active"><div class="cover-main"><div class="eyebrow">TECH CHALLENGE FIAP · FASE 1</div><div class="coverline"></div><h1>Olist: <span>desempenho comercial e operacional</span></h1><p class="lede">Da escala conquistada ao crescimento sustentável</p></div><div class="coverfoot"><span>RELATÓRIO EXECUTIVO</span><span>JAN/2017 — AGO/2018</span></div><div class="author">João Pedro Nogueira Caetano <span>FIAP</span></div></section>
-<section class="slide"><div class="eyebrow">SUMÁRIO EXECUTIVO</div><h2>O crescimento da Olist abre uma nova etapa de oportunidades</h2><p class="intro">A escala cresceu rapidamente no primeiro semestre, mas o avanço anual desacelerou para 50,4% em agosto. O próximo ciclo exige oferta mais diversa, entregas eficientes e recorrência.</p><div class="kpis six"><article><label>RITMO · AGO/18</label><strong>+50,4%</strong><small>crescimento anual dos pedidos</small></article><article><label>GMV · 1S18</label><strong>+179,2%</strong><small>valor transacionado vs. 1S17</small></article><article><label>CONCENTRAÇÃO</label><strong>66,2%</strong><small>GMV entregue nos 10% maiores vendedores</small></article><article><label>OFERTA REGIONAL</label><strong>9,5% <em>vs.</em> 1,8%</strong><small>clientes e vendedores no Nordeste</small></article><article><label>PRAZO REGIONAL</label><strong>19,99 vs. 10,73</strong><small>dias no Nordeste e Sudeste</small></article><article><label>EXPERIÊNCIA</label><strong>4,30 <em>vs.</em> 2,57</strong><small>nota média no prazo e com atraso</small></article></div><div class="takeaway">A próxima etapa combina crescimento com uma oferta mais diversa, entregas mais eficientes e maior capacidade de gerar novas compras.</div><p class="source">Fonte: Olist. Jan/2017 a ago/2018. Resultados observacionais não demonstram causalidade.</p></section>
-<section class="slide"><div class="eyebrow">01 / CRESCIMENTO</div><h2>Pedidos quase triplicaram no 1S18, mas o avanço anual caiu para +50% em agosto</h2><p class="intro">O volume cresceu muito acima do mercado no primeiro semestre. Ao longo de 2018, porém, o ritmo perdeu força.</p><div class="split"><div class="chartbox"><div class="charttitle">PEDIDOS POR MÊS DE COMPRA <small>JAN/2017 — AGO/2018</small></div><div class="chart-canvas-wrap"><canvas id="ordersChart" role="img" aria-label="Evolução mensal do número de pedidos entre janeiro de 2017 e agosto de 2018"></canvas></div></div><aside class="sidekpis"><div><label>1S17 → 1S18</label><b>14,6 mil → 41,2 mil</b><strong class="growth-percent">+181,9%</strong><small>de crescimento</small></div><div><label>MÉDIA MENSAL 2018</label><b>6,7 mil</b><small>Agosto: 6.512 pedidos</small></div><div><label>CRESCIMENTO ANUAL</label><b>+808,6% → +50,4%</b><small>Janeiro vs. agosto de 2018</small></div></aside></div><p class="takeaway">A escala avançou. O sinal para o próximo ciclo é mudar o foco de aquisição de volume para qualidade da oferta, eficiência operacional e recorrência.</p><p class="source">Todos os status; mês definido pela data da compra. Mercado: Ebit|Nielsen, Webshoppers 38, 1S18; escopos diferentes.</p></section>
-<section class="slide"><div class="eyebrow">02 / MONETIZAÇÃO</div><h2>O GMV acompanhou o crescimento dos pedidos e se manteve próximo de R$ 1 mi por mês em 2018</h2><p class="intro">O valor transacionado acompanhou o salto de pedidos, mas não mostra uma nova aceleração no segundo semestre.</p><div class="split"><div class="chartbox"><div class="charttitle">EVOLUÇÃO MENSAL DO GMV BRUTO <small>R$ MILHÕES · NOMINAL</small></div><div class="chart-canvas-wrap"><canvas id="gmvChart" role="img" aria-label="Evolução mensal do GMV bruto em milhões de reais"></canvas></div></div><aside class="sidekpis"><div><label>MÉDIA MENSAL 2018</label><b>R$ 1,08 mi</b></div><div><label>FAIXA MENSAL 2018</label><b>R$ 0,99 a 1,16 mi</b></div><div><label>PICO DO PERÍODO</label><b>R$ 1,18 mi</b><small>Novembro/2017</small></div></aside></div><div class="takeaway">O crescimento do GMV foi impulsionado principalmente por mais pedidos. O ticket médio de produtos caiu 2,9% no comparativo entre os primeiros semestres.</div><p class="source">GMV bruto = preço dos itens + frete registrado, todos os status. Não representa receita reconhecida.</p></section>
-<section class="slide"><div class="eyebrow">03 / CENÁRIO DE VOLUME</div><h2>Depois de agosto, a tendência apontava cerca de 24 mil pedidos até o fim de 2018</h2><p class="intro">O gráfico mostra primeiro os pedidos realizados de janeiro a agosto. Na sequência, apresenta a estimativa para setembro a dezembro, calculada pela continuidade da mesma tendência.</p><div class="chartbox wide forecast-chart"><div class="charttitle">PEDIDOS REAIS E PROJEÇÃO MENSAL <small>JAN A DEZ/2018</small></div><div class="chart-canvas-wrap"><canvas id="forecastChart" role="img" aria-label="Pedidos reais de janeiro a agosto de 2018 e projeção de setembro a dezembro com intervalo de 80%"></canvas></div></div><div class="kpis three forecast-summary"><article><label>PEDIDOS REAIS · JAN A AGO</label><strong>54,0 mil</strong></article><article><label>PROJEÇÃO · SET A DEZ</label><strong>23,9 mil</strong></article><article><label>INTERVALO · 80%</label><strong>22–26 mil</strong></article></div><p class="takeaway">A faixa de 22 a 26 mil pedidos é um cenário de tendência, sem ajuste sazonal. Não incorpora o efeito de eventos como a Black Friday.</p><p class="source">Um único método: tendência linear sobre os pedidos mensais de jan–ago/2018. O intervalo de incerteza e o teste histórico ficam detalhados no apêndice.</p></section>
-<section class="slide"><div class="eyebrow">04 / OFERTA E CONCENTRAÇÃO</div><h2>66% do GMV estão nos 10% maiores vendedores</h2><p class="intro">A concentração também aparece nas categorias. Poucas frentes respondem por boa parte do valor transacionado.</p><div class="split"><div class="chartbox"><div class="charttitle">CONCENTRAÇÃO DO GMV ENTREGUE <small>CURVA DE PARETO</small></div><div class="chart-canvas-wrap"><canvas id="paretoChart" role="img" aria-label="Curva de concentração do GMV entregue por participação acumulada de vendedores"></canvas></div></div><div class="chartbox"><div class="charttitle">TOP 10 CATEGORIAS <small>PARTICIPAÇÃO NO GMV ENTREGUE</small></div><div class="chart-canvas-wrap"><canvas id="categoryChart" role="img" aria-label="Participação das dez principais categorias no GMV entregue"></canvas></div></div></div><div class="kpis three compact"><article><label>TOP 1% VENDEDORES</label><strong>25,5%</strong><small>30 de 2.945 vendedores</small></article><article><label>TOP 10% VENDEDORES</label><strong>66,2%</strong><small>295 de 2.945 vendedores</small></article><article><label>TOP 10 CATEGORIAS</label><strong>63,2%</strong><small>GMV entregue</small></article></div><p class="source">GMV de pedidos entregues = produtos + frete. vendedores com ao menos um item entregue.</p></section>
-<section class="slide"><div class="eyebrow">05 / OPORTUNIDADE REGIONAL</div><h2>A presença de clientes no Nordeste supera a participação de vendedores na região</h2><p class="intro">Além da menor presença de vendedores, a região registra fretes e prazos médios superiores aos do Sudeste.</p><div class="split"><div class="chartbox"><div class="charttitle">ATRASO POR REGIÃO DE DESTINO <small>% DE PEDIDOS ENTREGUES</small></div><div class="chart-canvas-wrap"><canvas id="regionChart" role="img" aria-label="Taxa de atraso dos pedidos entregues por região de destino"></canvas></div></div><aside class="sidekpis"><div><label>PARTICIPAÇÃO NO NORDESTE</label><b>9,51% clientes / 1,83% vendedores</b></div><div><label>FRETE MÉDIO</label><b>R$ 35,97 vs. R$ 19,84</b><small>Nordeste vs. Sudeste</small></div><div><label>PRAZO MÉDIO</label><b>19,99 vs. 10,73 dias</b><small>Nordeste vs. Sudeste</small></div></aside></div><p class="takeaway">A prioridade regional é crescer com cobertura e capacidade de entrega. Captar vendedores sem resolver a experiência logística pode ampliar o problema.</p><p class="source">Clientes únicos com pedidos na janela; vendedores com pedidos entregues. Frete registrado não é custo logístico.</p></section>
-<section class="slide"><div class="eyebrow">06 / LOGÍSTICA</div><h2>A etapa entre a transportadora e o cliente concentra a maior diferença de prazo</h2><p class="intro">O tempo de preparação é parecido nos dois grupos. A diferença aparece depois que o pedido chega à transportadora.</p><div class="chartbox wide"><div class="charttitle">PRAZO MÉDIO POR ETAPA <small>DIAS · MESMA UF VS. NENHUM SELLER LOCAL</small></div><div class="chart-canvas-wrap"><canvas id="logisticsChart" role="img" aria-label="Tempo médio por etapa logística, comparando vendedores na mesma UF e sem vendedor local"></canvas></div></div><div class="kpis three"><article><label>APROVAÇÃO → TRANSPORTADORA</label><strong>2,7 vs. 2,8</strong><small>dias</small></article><article><label>TRANSPORTADORA → CLIENTE</label><strong>4,8 vs. 11,9</strong><small>dias</small></article><article><label>DIFERENÇA AJUSTADA</label><strong>2,9 dias</strong><small>diferença estimada, controlando distância e UF</small></article></div><p class="source">Casos mistos excluídos. Ajuste OLS por log(1 + distância aproximada); associação, não causalidade.</p></section>
-<section class="slide"><div class="eyebrow">07 / EXPERIÊNCIA DO CLIENTE</div><h2>Entregas mais demoradas estão associadas a avaliações mais baixas</h2><p class="intro">Mesmo entre pedidos entregues no prazo, a avaliação tende a cair conforme aumenta o tempo de entrega.</p><div class="split"><div class="chartbox"><div class="charttitle">NOTA MÉDIA POR FAIXA DE ENTREGA <small>ESCALA DE 1 A 5</small></div><div class="chart-canvas-wrap"><canvas id="reviewChart" role="img" aria-label="Nota média por faixa de tempo de entrega, comparando entregas no prazo e atrasadas"></canvas></div></div><aside class="sidekpis"><div><label>ENTREGUES NO PRAZO</label><b>4,30 / 5</b><small>6,6% de nota 1</small></div><div><label>ENTREGUES COM ATRASO</label><b>2,57 / 5</b><small>46,1% de nota 1</small></div><div><label>30+ DIAS · ATRASADOS</label><b>1,93 / 5</b><small>63,3% de nota 1 · n=3.598</small></div></aside></div><p class="takeaway">Prazo não é apenas custo logístico: é parte da experiência de compra. Acompanhar tempo e atraso como indicadores de satisfação.</p><p class="source">Uma avaliação por pedido, primeira data de criação. Lead time = compra até entrega.</p></section>
-<section class="slide"><div class="eyebrow">08 / RECORRÊNCIA</div><h2>Poucos clientes realizaram uma segunda compra entregue em até 12 meses</h2><p class="intro">Na coorte analisada, 906 de 21.403 clientes fizeram uma nova compra com entrega concluída em até 365 dias.</p><div class="bigmetric repeat-metric"><strong>4,28%</strong><span><b>Taxa de recompra</b><small>906 clientes fizeram uma segunda compra com entrega concluída</small></span></div><div class="chartbox wide"><div class="charttitle">RECOMPRA POR PONTUALIDADE DA PRIMEIRA ENTREGA · N POR GRUPO</div><div class="chart-canvas-wrap"><canvas id="repeatChart" role="img" aria-label="Taxa de recompra por pontualidade da primeira entrega, com tamanho de cada grupo"></canvas></div></div><div class="threecards"><article><b>01 · Pós-compra relevante</b><p>Comunicação após entrega, com conteúdo e serviço alinhados à categoria.</p></article><article><b>02 · Próxima compra</b><p>Recomendações complementares e campanhas para clientes de primeira compra.</p></article><article><b>03 · Recuperação de inativos</b><p>Testes de reativação com grupos de controle e janela definida.</p></article></div><p class="source">Coorte: primeira compra entregue jan–ago/2017; nova compra entregue em até 365 dias. Fisher p=0,149; diferença não conclusiva. A análise por data da primeira entrega usa outra composição de coorte e está no apêndice.</p></section>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Olist | Relatório Executivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-<section class="slide"><div class="eyebrow">09 / PLANO PARA O PRÓXIMO CICLO</div><h2>As próximas iniciativas devem ampliar a oferta, melhorar a entrega e estimular a recompra</h2><p class="intro">Três frentes transformam os pontos identificados em iniciativas que podem ser testadas e acompanhadas.</p><div class="priorities"><article><span>01</span><div><h3>Diversificar a oferta</h3><p><b>Evidência</b> · 66,2% do GMV em 10% dos vendedores. Nordeste: 9,5% dos clientes e 1,8% dos vendedores.</p><p><b>Ação</b> · Captar vendedores em regiões e categorias sub-representadas.</p><p><b>Medir</b> · vendedores ativos, cobertura de sortimento, pedidos por UF e participação do top 10%.</p></div></article><article><span>02</span><div><h3>Encurtar o transporte</h3><p><b>Evidência</b> · 2,9 dias de diferença estimada após controles de distância e UF. Resultado associativo, não causal.</p><p><b>Ação</b> · Pilotar novas opções de transporte nos corredores de maior volume e tempo em trânsito.</p><p><b>Medir</b> · Dias em trânsito, atraso, frete por pedido, nota e custo efetivo.</p></div></article><article><span>03</span><div><h3>Gerar a segunda compra</h3><p><b>Evidência</b> · 4,3% dos clientes no prazo e 3,2% dos clientes com atraso fizeram nova compra entregue. Diferença não conclusiva (p=0,149).</p><p><b>Ação</b> · Testar jornadas pós-compra, cross-sell e reativação com grupos de controle.</p><p><b>Medir</b> · Recompra em 365 dias, margem incremental, avaliação e custo de campanha.</p></div></article></div><div class="decision"><b>DECISÃO RECOMENDADA</b><strong>Pilotar no Nordeste e em rotas longas antes de ampliar o investimento.</strong><span>Validar impacto em prazo, atraso, satisfação e custo por pedido. Escalar somente após comparação com grupo de controle.</span></div><p class="source">Sequência: definir linha de base → pilotar → comparar com controle → escalar o que melhora margem e experiência.</p></section>
-<section class="slide cover appendix-cover"><div class="cover-main"><div class="eyebrow">RELATÓRIO EXECUTIVO · OLIST</div><div class="coverline"></div><h1>Metodologia <span>e critérios de análise</span></h1><p class="lede">A seguir, estão as definições, os métodos de cálculo e as limitações que dão contexto aos resultados apresentados.</p></div><div class="coverfoot"><span>APÊNDICE</span><span>FIAP</span></div></section><section class="slide appendix"><div class="eyebrow">APÊNDICE / PAGAMENTOS</div><h2>Cartão e parcelamento concentram a maior parte dos pagamentos</h2><p class="intro">Mais de seis em cada dez pedidos pagos com cartão têm mais de uma parcela. O valor mediano também varia conforme a faixa de parcelamento.</p><div class="split"><div class="chartbox"><div class="charttitle">MIX DO VALOR PAGO <small>PARTICIPAÇÃO POR MEIO</small></div><div class="chart-canvas-wrap"><canvas id="paymentChart" role="img" aria-label="Participação de cada meio de pagamento no valor total pago"></canvas></div></div><div class="chartbox"><div class="charttitle">VALOR MEDIANO POR PEDIDO <small>R$ · FAIXA DE PARCELAS</small></div><div class="chart-canvas-wrap"><canvas id="installmentChart" role="img" aria-label="Valor mediano por pedido conforme a faixa de parcelas do cartão"></canvas></div></div></div><div class="takeaway">Há espaço para testar condições de parcelamento por categoria e faixa de valor. A decisão deve olhar conversão e margem, não apenas ticket.</div><p class="source">Pedidos entregues. Valor do cartão agregado por pedido; associação não demonstra causalidade.</p></section>
-<section class="slide appendix"><div class="eyebrow">APÊNDICE A / DEFINIÇÕES</div><h2>Como os dados foram organizados e quais conceitos orientam os indicadores</h2><p class="intro">O período principal considera pedidos comprados entre janeiro de 2017 e agosto de 2018.</p><div class="definitiongrid"><article><h3>Universo e unidade</h3><p>99.092 pedidos e 95.774 clientes únicos. Pedido = order_id; cliente = customer_unique_id.</p></article><article><h3>Volume, GMV e ticket</h3><p>Volume = pedidos por mês de compra, todos os status. GMV = preço dos itens + frete registrado. Ticket = itens por pedido, sem frete.</p></article><article><h3>Concentração</h3><p>Pedidos entregues. vendedores ordenados pelo GMV entregue; top 1% e top 10% dos vendedores ativos. Categorias com nome identificado.</p></article><article><h3>Mix e desempenho regional</h3><p>Clientes únicos com pedido na janela; vendedores com item entregue. Prazo, atraso e frete por UF de destino.</p></article><article><h3>Experiência</h3><p>Uma avaliação por pedido, primeira data de criação. No prazo = entrega até a data estimada. Lead time = compra até entrega.</p></article><article><h3>Recompra e pagamentos</h3><p>Segunda compra entregue em até 365 dias para clientes cuja primeira compra entregue ocorreu de jan a ago/2017. Cartão agregado por pedido.</p></article></div><p class="source">Fonte: Brazilian E-Commerce Public Dataset by Olist. GMV e freight_value são medidas transacionais, não receita ou custo de transportadora.</p></section>
-<section class="slide appendix"><div class="eyebrow">APÊNDICE B / MÉTODOS E LIMITAÇÕES</div><h2>Como os modelos foram construídos e quais são seus limites</h2><p class="intro">Os resultados descrevem associações no histórico observado, não efeitos causais.</p><div class="methodgrid"><article><h3>Cenário de volume</h3><p>Tendência linear OLS com jan–ago/2018; extrapolação set–dez. Estimativa central: 23.945 pedidos; intervalo de 80%: 22.173 a 25.717. Sem ajuste sazonal ou Black Friday. Backtest WAPE: 17,1%. Sem sazonalidade ou Black Friday.</p></article><article><h3>Ajuste do prazo por distância</h3><p>Compara todos os vendedores na UF do cliente com nenhum seller local; casos mistos excluídos. Distância aproximada por Haversine entre centróides de CEP. OLS com log(1 + km), erros HC3. Diferença: 2,9 dias; IC95% 2,7–3,0; n=95.682. Modelo com indicador de UF e log(1 + distância).</p></article><article><h3>Teste de recompra</h3><p>Teste exato de Fisher na coorte com data estimada válida. No prazo: 877/20.510 (4,28%). Atrasada: 29/893 (3,25%). p=0,149; diferença não conclusiva. Sensibilidade com coorte definida pela primeira entrega entre jan–ago/2017 e recompra entregue em 365 dias: no prazo 897/19.334 (4,64%) vs. atrasada 18/723 (2,49%); Fisher p=0,0047.</p></article><article><h3>Agrupamento de pagamentos</h3><p>Valor pago no cartão agregado por pedido e classificado pelo maior número de parcelas informado. Medianas por pedido. Faixas: 1x, 2–3x, 4–6x, 7–10x e 11x+.</p></article><article><h3>Amostras de avaliação</h3><p>Avaliações válidas: 87.902 entregas no prazo e 7.658 atrasadas. Na faixa de 30+ dias: n=786 no prazo e n=3.598 atrasadas. Faixa 0–5 dias atrasada: n=100.</p></article><article><h3>Limites de interpretação</h3><p>Base observacional e histórica. Distância aproximada por CEP; modelo não controla transportadora, categoria, peso, valor ou rota. freight_value não é custo logístico; GMV não é receita, margem ou lucro.</p></article></div><p class="source">Referência externa: Ebit|Nielsen, Webshoppers 38, 1S18. População e definições não são diretamente comparáveis.</p></section>
-</main>
-<footer class="nav"><button id="prev">← Anterior</button><div class="progress"><span id="bar"></span></div><button id="next">Próximo →</button><span class="keys">← → navegar · F tela cheia</span></footer>
-<script src="chart_data.js"></script><script src="app.js"></script></body></html>
+<body>
+    <header class="top">
+        <div class="brand"><span class="mark">O</span><span>OLIST <i>/</i> FIAP TECH CHALLENGE</span></div>
+        <div class="topright"><span id="counter">01 / 15</span><button id="full">Tela cheia ↗</button><button
+                onclick="window.print()">Salvar PDF ↓</button></div>
+    </header>
+    <main id="deck">
+
+        <section class="slide cover active">
+            <div class="cover-main">
+                <div class="eyebrow">TECH CHALLENGE FIAP · FASE 1</div>
+                <div class="coverline"></div>
+                <h1>Olist: <span>desempenho comercial e operacional</span></h1>
+                <p class="lede">Da escala conquistada ao crescimento sustentável</p>
+            </div>
+
+            <div class="coverfoot">
+                <span>RELATÓRIO EXECUTIVO</span>
+                <span>PERÍODO ANALISADO: JAN/2017 — AGO/2018</span>
+            </div>
+
+            <div class="author">
+                <div class="author-primary">
+                    João Pedro Nogueira Caetano
+                    <span>Pós Tech · Data Analytics · FIAP</span>
+                </div>
+                <div class="author-meta">
+                    RM 378530 <span>|</span> Turma <strong>16DTAT</strong>
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">SUMÁRIO EXECUTIVO</div>
+            <h2>O crescimento da Olist abre uma nova etapa de oportunidades</h2>
+            <p class="intro">A escala cresceu rapidamente no primeiro semestre, mas o avanço anual desacelerou para
+                50,4% em agosto. O próximo ciclo exige oferta mais diversa, entregas eficientes e recorrência.</p>
+            <div class="kpis six">
+                <article><label>RITMO · AGO/18</label><strong>+50,4%</strong><small>crescimento anual dos
+                        pedidos</small></article>
+                <article><label>GMV · 1S18</label><strong>+179,2%</strong><small>valor transacionado vs. 1S17</small>
+                </article>
+                <article><label>CONCENTRAÇÃO</label><strong>66,2%</strong><small>GMV entregue nos 10% maiores
+                        vendedores</small></article>
+                <article><label>OFERTA REGIONAL</label><strong>9,5% <em>vs.</em> 1,8%</strong><small>clientes e
+                        vendedores no Nordeste</small></article>
+                <article><label>PRAZO REGIONAL</label><strong>19,99 vs. 10,73</strong><small>dias no Nordeste e
+                        Sudeste</small></article>
+                <article><label>EXPERIÊNCIA</label><strong>4,30 <em>vs.</em> 2,57</strong><small>nota média no prazo e
+                        com atraso</small></article>
+            </div>
+            <div class="takeaway">A próxima etapa combina crescimento com uma oferta mais diversa, entregas mais
+                eficientes e maior capacidade de gerar novas compras.</div>
+            <p class="source">Fonte: Olist. Jan/2017 a ago/2018. Resultados observacionais não demonstram causalidade.
+            </p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">01 / CRESCIMENTO</div>
+            <h2>Pedidos quase triplicaram no 1S18, mas o avanço anual caiu para +50% em agosto</h2>
+            <p class="intro">O volume cresceu muito acima do mercado no primeiro semestre. Ao longo de 2018, porém, o
+                ritmo perdeu força.</p>
+            <div class="split">
+                <div class="chartbox">
+                    <div class="charttitle">PEDIDOS POR MÊS DE COMPRA <small>JAN/2017 — AGO/2018</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="ordersChart" role="img"
+                            aria-label="Evolução mensal do número de pedidos entre janeiro de 2017 e agosto de 2018"></canvas>
+                    </div>
+                </div>
+                <aside class="sidekpis">
+                    <div><label>1S17 → 1S18</label><b>14,6 mil → 41,2 mil</b><strong
+                            class="growth-percent">+181,9%</strong><small>de crescimento</small></div>
+                    <div><label>MÉDIA MENSAL 2018</label><b>6,7 mil</b><small>Agosto: 6.512 pedidos</small></div>
+                    <div><label>CRESCIMENTO ANUAL</label><b>+808,6% → +50,4%</b><small>Janeiro vs. agosto de
+                            2018</small></div>
+                </aside>
+            </div>
+            <p class="takeaway">A escala avançou. O sinal para o próximo ciclo é mudar o foco de aquisição de volume
+                para qualidade da oferta, eficiência operacional e recorrência.</p>
+            <p class="source">Todos os status; mês definido pela data da compra. Mercado: Ebit|Nielsen, Webshoppers 38,
+                1S18; escopos diferentes.</p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">02 / MONETIZAÇÃO</div>
+            <h2>O GMV acompanhou o crescimento dos pedidos e se manteve próximo de R$ 1 mi por mês em 2018</h2>
+            <p class="intro">O valor transacionado acompanhou o salto de pedidos, mas não mostra uma nova aceleração no
+                segundo semestre.</p>
+            <div class="split">
+                <div class="chartbox">
+                    <div class="charttitle">EVOLUÇÃO MENSAL DO GMV BRUTO <small>R$ MILHÕES · NOMINAL</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="gmvChart" role="img"
+                            aria-label="Evolução mensal do GMV bruto em milhões de reais"></canvas></div>
+                </div>
+                <aside class="sidekpis">
+                    <div><label>MÉDIA MENSAL 2018</label><b>R$ 1,08 mi</b></div>
+                    <div><label>FAIXA MENSAL 2018</label><b>R$ 0,99 a 1,16 mi</b></div>
+                    <div><label>PICO DO PERÍODO</label><b>R$ 1,18 mi</b><small>Novembro/2017</small></div>
+                </aside>
+            </div>
+            <div class="takeaway">O crescimento do GMV foi impulsionado principalmente por mais pedidos. O ticket médio
+                de produtos caiu 2,9% no comparativo entre os primeiros semestres.</div>
+            <p class="source">GMV bruto = preço dos itens + frete registrado, todos os status. Não representa receita
+                reconhecida.</p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">03 / CENÁRIO DE VOLUME</div>
+            <h2>Depois de agosto, a tendência apontava cerca de 24 mil pedidos até o fim de 2018</h2>
+            <p class="intro">O gráfico mostra primeiro os pedidos realizados de janeiro a agosto. Na sequência,
+                apresenta a estimativa para setembro a dezembro, calculada pela continuidade da mesma tendência.</p>
+            <div class="chartbox wide forecast-chart">
+                <div class="charttitle">PEDIDOS REAIS E PROJEÇÃO MENSAL <small>JAN A DEZ/2018</small></div>
+                <div class="chart-canvas-wrap"><canvas id="forecastChart" role="img"
+                        aria-label="Pedidos reais de janeiro a agosto de 2018 e projeção de setembro a dezembro com intervalo de 80%"></canvas>
+                </div>
+            </div>
+            <div class="kpis three forecast-summary">
+                <article><label>PEDIDOS REAIS · JAN A AGO</label><strong>54,0 mil</strong></article>
+                <article><label>PROJEÇÃO · SET A DEZ</label><strong>23,9 mil</strong></article>
+                <article><label>INTERVALO · 80%</label><strong>22–26 mil</strong></article>
+            </div>
+            <p class="takeaway">A faixa de 22 a 26 mil pedidos é um cenário de tendência, sem ajuste sazonal. Não
+                incorpora o efeito de eventos como a Black Friday.</p>
+            <p class="source">Um único método: tendência linear sobre os pedidos mensais de jan–ago/2018. O intervalo de
+                incerteza e o teste histórico ficam detalhados no apêndice.</p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">04 / OFERTA E CONCENTRAÇÃO</div>
+            <h2>66% do GMV estão nos 10% maiores vendedores</h2>
+            <p class="intro">A concentração também aparece nas categorias. Poucas frentes respondem por boa parte do
+                valor transacionado.</p>
+            <div class="split">
+                <div class="chartbox">
+                    <div class="charttitle">CONCENTRAÇÃO DO GMV ENTREGUE <small>CURVA DE PARETO</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="paretoChart" role="img"
+                            aria-label="Curva de concentração do GMV entregue por participação acumulada de vendedores"></canvas>
+                    </div>
+                </div>
+                <div class="chartbox">
+                    <div class="charttitle">TOP 10 CATEGORIAS <small>PARTICIPAÇÃO NO GMV ENTREGUE</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="categoryChart" role="img"
+                            aria-label="Participação das dez principais categorias no GMV entregue"></canvas></div>
+                </div>
+            </div>
+            <div class="kpis three compact">
+                <article><label>TOP 1% VENDEDORES</label><strong>25,5%</strong><small>30 de 2.945 vendedores</small>
+                </article>
+                <article><label>TOP 10% VENDEDORES</label><strong>66,2%</strong><small>295 de 2.945 vendedores</small>
+                </article>
+                <article><label>TOP 10 CATEGORIAS</label><strong>63,2%</strong><small>GMV entregue</small></article>
+            </div>
+            <p class="source">GMV de pedidos entregues = produtos + frete. vendedores com ao menos um item entregue.</p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">05 / OPORTUNIDADE REGIONAL</div>
+            <h2>A presença de clientes no Nordeste supera a participação de vendedores na região</h2>
+            <p class="intro">Além da menor presença de vendedores, a região registra fretes e prazos médios superiores
+                aos do Sudeste.</p>
+            <div class="split">
+                <div class="chartbox">
+                    <div class="charttitle">ATRASO POR REGIÃO DE DESTINO <small>% DE PEDIDOS ENTREGUES</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="regionChart" role="img"
+                            aria-label="Taxa de atraso dos pedidos entregues por região de destino"></canvas></div>
+                </div>
+                <aside class="sidekpis">
+                    <div><label>PARTICIPAÇÃO NO NORDESTE</label><b>9,51% clientes / 1,83% vendedores</b></div>
+                    <div><label>FRETE MÉDIO</label><b>R$ 35,97 vs. R$ 19,84</b><small>Nordeste vs. Sudeste</small></div>
+                    <div><label>PRAZO MÉDIO</label><b>19,99 vs. 10,73 dias</b><small>Nordeste vs. Sudeste</small></div>
+                </aside>
+            </div>
+            <p class="takeaway">A prioridade regional é crescer com cobertura e capacidade de entrega. Captar vendedores
+                sem resolver a experiência logística pode ampliar o problema.</p>
+            <p class="source">Clientes únicos com pedidos na janela; vendedores com pedidos entregues. Frete registrado
+                não é custo logístico.</p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">06 / LOGÍSTICA</div>
+            <h2>A etapa entre a transportadora e o cliente concentra a maior diferença de prazo</h2>
+            <p class="intro">O tempo de preparação é parecido nos dois grupos. A diferença aparece depois que o pedido
+                chega à transportadora.</p>
+            <div class="chartbox wide">
+                <div class="charttitle">PRAZO MÉDIO POR ETAPA <small>DIAS · MESMA UF VS. NENHUM SELLER LOCAL</small>
+                </div>
+                <div class="chart-canvas-wrap"><canvas id="logisticsChart" role="img"
+                        aria-label="Tempo médio por etapa logística, comparando vendedores na mesma UF e sem vendedor local"></canvas>
+                </div>
+            </div>
+            <div class="kpis three">
+                <article><label>APROVAÇÃO → TRANSPORTADORA</label><strong>2,7 vs. 2,8</strong><small>dias</small>
+                </article>
+                <article><label>TRANSPORTADORA → CLIENTE</label><strong>4,8 vs. 11,9</strong><small>dias</small>
+                </article>
+                <article><label>DIFERENÇA AJUSTADA</label><strong>2,9 dias</strong><small>diferença estimada,
+                        controlando distância e UF</small></article>
+            </div>
+            <p class="source">Casos mistos excluídos. Ajuste OLS por log(1 + distância aproximada); associação, não
+                causalidade.</p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">07 / EXPERIÊNCIA DO CLIENTE</div>
+            <h2>Entregas mais demoradas estão associadas a avaliações mais baixas</h2>
+            <p class="intro">Mesmo entre pedidos entregues no prazo, a avaliação tende a cair conforme aumenta o tempo
+                de entrega.</p>
+            <div class="split">
+                <div class="chartbox">
+                    <div class="charttitle">NOTA MÉDIA POR FAIXA DE ENTREGA <small>ESCALA DE 1 A 5</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="reviewChart" role="img"
+                            aria-label="Nota média por faixa de tempo de entrega, comparando entregas no prazo e atrasadas"></canvas>
+                    </div>
+                </div>
+                <aside class="sidekpis">
+                    <div><label>ENTREGUES NO PRAZO</label><b>4,30 / 5</b><small>6,6% de nota 1</small></div>
+                    <div><label>ENTREGUES COM ATRASO</label><b>2,57 / 5</b><small>46,1% de nota 1</small></div>
+                    <div><label>30+ DIAS · ATRASADOS</label><b>1,93 / 5</b><small>63,3% de nota 1 · n=3.598</small>
+                    </div>
+                </aside>
+            </div>
+            <p class="takeaway">Prazo não é apenas custo logístico: é parte da experiência de compra. Acompanhar tempo e
+                atraso como indicadores de satisfação.</p>
+            <p class="source">Uma avaliação por pedido, primeira data de criação. Lead time = compra até entrega.</p>
+        </section>
+        <section class="slide">
+            <div class="eyebrow">08 / RECORRÊNCIA</div>
+            <h2>Poucos clientes realizaram uma segunda compra entregue em até 12 meses</h2>
+            <p class="intro">Na coorte analisada, 906 de 21.403 clientes fizeram uma nova compra com entrega concluída
+                em até 365 dias.</p>
+            <div class="bigmetric repeat-metric"><strong>4,28%</strong><span><b>Taxa de recompra</b><small>906 clientes
+                        fizeram uma segunda compra com entrega concluída</small></span></div>
+            <div class="chartbox wide">
+                <div class="charttitle">RECOMPRA POR PONTUALIDADE DA PRIMEIRA ENTREGA · N POR GRUPO</div>
+                <div class="chart-canvas-wrap"><canvas id="repeatChart" role="img"
+                        aria-label="Taxa de recompra por pontualidade da primeira entrega, com tamanho de cada grupo"></canvas>
+                </div>
+            </div>
+            <div class="threecards">
+                <article><b>01 · Pós-compra relevante</b>
+                    <p>Comunicação após entrega, com conteúdo e serviço alinhados à categoria.</p>
+                </article>
+                <article><b>02 · Próxima compra</b>
+                    <p>Recomendações complementares e campanhas para clientes de primeira compra.</p>
+                </article>
+                <article><b>03 · Recuperação de inativos</b>
+                    <p>Testes de reativação com grupos de controle e janela definida.</p>
+                </article>
+            </div>
+            <p class="source">Coorte: primeira compra entregue jan–ago/2017; nova compra entregue em até 365 dias.
+                Fisher p=0,149; diferença não conclusiva. A análise por data da primeira entrega usa outra composição de
+                coorte e está no apêndice.</p>
+        </section>
+
+        <section class="slide">
+            <div class="eyebrow">09 / PLANO PARA O PRÓXIMO CICLO</div>
+            <h2>As próximas iniciativas devem ampliar a oferta, melhorar a entrega e estimular a recompra</h2>
+            <p class="intro">Três frentes transformam os pontos identificados em iniciativas que podem ser testadas e
+                acompanhadas.</p>
+            <div class="priorities">
+                <article><span>01</span>
+                    <div>
+                        <h3>Diversificar a oferta</h3>
+                        <p><b>Evidência</b> · 66,2% do GMV em 10% dos vendedores. Nordeste: 9,5% dos clientes e 1,8% dos
+                            vendedores.</p>
+                        <p><b>Ação</b> · Captar vendedores em regiões e categorias sub-representadas.</p>
+                        <p><b>Medir</b> · vendedores ativos, cobertura de sortimento, pedidos por UF e participação do
+                            top 10%.</p>
+                    </div>
+                </article>
+                <article><span>02</span>
+                    <div>
+                        <h3>Encurtar o transporte</h3>
+                        <p><b>Evidência</b> · 2,9 dias de diferença estimada após controles de distância e UF. Resultado
+                            associativo, não causal.</p>
+                        <p><b>Ação</b> · Pilotar novas opções de transporte nos corredores de maior volume e tempo em
+                            trânsito.</p>
+                        <p><b>Medir</b> · Dias em trânsito, atraso, frete por pedido, nota e custo efetivo.</p>
+                    </div>
+                </article>
+                <article><span>03</span>
+                    <div>
+                        <h3>Gerar a segunda compra</h3>
+                        <p><b>Evidência</b> · 4,3% dos clientes no prazo e 3,2% dos clientes com atraso fizeram nova
+                            compra entregue. Diferença não conclusiva (p=0,149).</p>
+                        <p><b>Ação</b> · Testar jornadas pós-compra, cross-sell e reativação com grupos de controle.</p>
+                        <p><b>Medir</b> · Recompra em 365 dias, margem incremental, avaliação e custo de campanha.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="decision"><b>DECISÃO RECOMENDADA</b><strong>Pilotar no Nordeste e em rotas longas antes de
+                    ampliar o investimento.</strong><span>Validar impacto em prazo, atraso, satisfação e custo por
+                    pedido. Escalar somente após comparação com grupo de controle.</span></div>
+            <p class="source">Sequência: definir linha de base → pilotar → comparar com controle → escalar o que melhora
+                margem e experiência.</p>
+        </section>
+        <section class="slide cover appendix-cover">
+            <div class="cover-main">
+                <div class="eyebrow">RELATÓRIO EXECUTIVO · OLIST</div>
+                <div class="coverline"></div>
+                <h1>Metodologia <span>e critérios de análise</span></h1>
+                <p class="lede">A seguir, estão as definições, os métodos de cálculo e as limitações que dão contexto
+                    aos resultados apresentados.</p>
+            </div>
+            <div class="coverfoot"><span>APÊNDICE</span><span>FIAP</span></div>
+        </section>
+        <section class="slide appendix">
+            <div class="eyebrow">APÊNDICE / PAGAMENTOS</div>
+            <h2>Cartão e parcelamento concentram a maior parte dos pagamentos</h2>
+            <p class="intro">Mais de seis em cada dez pedidos pagos com cartão têm mais de uma parcela. O valor mediano
+                também varia conforme a faixa de parcelamento.</p>
+            <div class="split">
+                <div class="chartbox">
+                    <div class="charttitle">MIX DO VALOR PAGO <small>PARTICIPAÇÃO POR MEIO</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="paymentChart" role="img"
+                            aria-label="Participação de cada meio de pagamento no valor total pago"></canvas></div>
+                </div>
+                <div class="chartbox">
+                    <div class="charttitle">VALOR MEDIANO POR PEDIDO <small>R$ · FAIXA DE PARCELAS</small></div>
+                    <div class="chart-canvas-wrap"><canvas id="installmentChart" role="img"
+                            aria-label="Valor mediano por pedido conforme a faixa de parcelas do cartão"></canvas></div>
+                </div>
+            </div>
+            <div class="takeaway">Há espaço para testar condições de parcelamento por categoria e faixa de valor. A
+                decisão deve olhar conversão e margem, não apenas ticket.</div>
+            <p class="source">Pedidos entregues. Valor do cartão agregado por pedido; associação não demonstra
+                causalidade.</p>
+        </section>
+        <section class="slide appendix">
+            <div class="eyebrow">APÊNDICE A / DEFINIÇÕES</div>
+            <h2>Como os dados foram organizados e quais conceitos orientam os indicadores</h2>
+            <p class="intro">O período principal considera pedidos comprados entre janeiro de 2017 e agosto de 2018.</p>
+            <div class="definitiongrid">
+                <article>
+                    <h3>Universo e unidade</h3>
+                    <p>99.092 pedidos e 95.774 clientes únicos. Pedido = order_id; cliente = customer_unique_id.</p>
+                </article>
+                <article>
+                    <h3>Volume, GMV e ticket</h3>
+                    <p>Volume = pedidos por mês de compra, todos os status. GMV = preço dos itens + frete registrado.
+                        Ticket = itens por pedido, sem frete.</p>
+                </article>
+                <article>
+                    <h3>Concentração</h3>
+                    <p>Pedidos entregues. vendedores ordenados pelo GMV entregue; top 1% e top 10% dos vendedores
+                        ativos. Categorias com nome identificado.</p>
+                </article>
+                <article>
+                    <h3>Mix e desempenho regional</h3>
+                    <p>Clientes únicos com pedido na janela; vendedores com item entregue. Prazo, atraso e frete por UF
+                        de destino.</p>
+                </article>
+                <article>
+                    <h3>Experiência</h3>
+                    <p>Uma avaliação por pedido, primeira data de criação. No prazo = entrega até a data estimada. Lead
+                        time = compra até entrega.</p>
+                </article>
+                <article>
+                    <h3>Recompra e pagamentos</h3>
+                    <p>Segunda compra entregue em até 365 dias para clientes cuja primeira compra entregue ocorreu de
+                        jan a ago/2017. Cartão agregado por pedido.</p>
+                </article>
+            </div>
+            <p class="source">Fonte: Brazilian E-Commerce Public Dataset by Olist. GMV e freight_value são medidas
+                transacionais, não receita ou custo de transportadora.</p>
+        </section>
+        <section class="slide appendix">
+            <div class="eyebrow">APÊNDICE B / MÉTODOS E LIMITAÇÕES</div>
+            <h2>Como os modelos foram construídos e quais são seus limites</h2>
+            <p class="intro">Os resultados descrevem associações no histórico observado, não efeitos causais.</p>
+            <div class="methodgrid">
+                <article>
+                    <h3>Cenário de volume</h3>
+                    <p>Tendência linear OLS com jan–ago/2018; extrapolação set–dez. Estimativa central: 23.945 pedidos;
+                        intervalo de 80%: 22.173 a 25.717. Sem ajuste sazonal ou Black Friday. Backtest WAPE: 17,1%. Sem
+                        sazonalidade ou Black Friday.</p>
+                </article>
+                <article>
+                    <h3>Ajuste do prazo por distância</h3>
+                    <p>Compara todos os vendedores na UF do cliente com nenhum seller local; casos mistos excluídos.
+                        Distância aproximada por Haversine entre centróides de CEP. OLS com log(1 + km), erros HC3.
+                        Diferença: 2,9 dias; IC95% 2,7–3,0; n=95.682. Modelo com indicador de UF e log(1 + distância).
+                    </p>
+                </article>
+                <article>
+                    <h3>Teste de recompra</h3>
+                    <p>Teste exato de Fisher na coorte com data estimada válida. No prazo: 877/20.510 (4,28%). Atrasada:
+                        29/893 (3,25%). p=0,149; diferença não conclusiva. Sensibilidade com coorte definida pela
+                        primeira entrega entre jan–ago/2017 e recompra entregue em 365 dias: no prazo 897/19.334 (4,64%)
+                        vs. atrasada 18/723 (2,49%); Fisher p=0,0047.</p>
+                </article>
+                <article>
+                    <h3>Agrupamento de pagamentos</h3>
+                    <p>Valor pago no cartão agregado por pedido e classificado pelo maior número de parcelas informado.
+                        Medianas por pedido. Faixas: 1x, 2–3x, 4–6x, 7–10x e 11x+.</p>
+                </article>
+                <article>
+                    <h3>Amostras de avaliação</h3>
+                    <p>Avaliações válidas: 87.902 entregas no prazo e 7.658 atrasadas. Na faixa de 30+ dias: n=786 no
+                        prazo e n=3.598 atrasadas. Faixa 0–5 dias atrasada: n=100.</p>
+                </article>
+                <article>
+                    <h3>Limites de interpretação</h3>
+                    <p>Base observacional e histórica. Distância aproximada por CEP; modelo não controla transportadora,
+                        categoria, peso, valor ou rota. freight_value não é custo logístico; GMV não é receita, margem
+                        ou lucro.</p>
+                </article>
+            </div>
+            <p class="source">Referência externa: Ebit|Nielsen, Webshoppers 38, 1S18. População e definições não são
+                diretamente comparáveis.</p>
+        </section>
+    </main>
+    <footer class="nav"><button id="prev">← Anterior</button>
+        <div class="progress"><span id="bar"></span></div><button id="next">Próximo →</button><span class="keys">← →
+            navegar · F tela cheia</span>
+    </footer>
+    <script src="chart_data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
