@@ -1076,3 +1076,91 @@ button {
     top: .5in
   }
 }
+
+
+/* REV12 — links de acesso na capa: GitHub e vídeo */
+.cover-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px auto 0;
+}
+
+.cover-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .06);
+  color: #f3f7fa;
+  text-decoration: none;
+  font: 700 12px Manrope, sans-serif;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.cover-link:hover,
+.cover-link:focus-visible {
+  background: rgba(255, 255, 255, .13);
+  border-color: #9bd0d0;
+  color: #fff;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.cover-link:focus-visible {
+  box-shadow: 0 0 0 3px rgba(155, 208, 208, .22);
+}
+
+.link-icon {
+  color: #8dbfff;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.youtube-dot {
+  width: 9px;
+  height: 9px;
+  flex: 0 0 9px;
+  border-radius: 50%;
+  background: #ff5555;
+  box-shadow: 0 0 0 3px rgba(255, 85, 85, .14);
+}
+
+.link-arrow {
+  margin-left: 3px;
+  color: #9fb7c7;
+  font-size: 13px;
+}
+
+@media (max-width: 850px) {
+  .cover-links {
+    margin-top: 22px;
+    gap: 9px;
+  }
+
+  .cover-link {
+    min-height: 42px;
+    padding: 0 13px;
+    font-size: 11px;
+  }
+}
+
+@media print {
+  .cover-links {
+    gap: 8pt;
+    margin-top: 18pt;
+  }
+
+  .cover-link {
+    min-height: 30pt;
+    padding: 0 12pt;
+    font-size: 8pt;
+    transform: none !important;
+  }
+}
